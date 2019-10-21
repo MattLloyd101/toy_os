@@ -18,7 +18,7 @@ pub extern "C" fn _start() -> ! {
 	for (i, &byte) in HELLO.iter().enumerate() {
 		unsafe {
 			*vga_buffer_pointer.offset(i as isize * 2) = byte;
-			*vga_buffer_pointer.offset(i as isize * 2 + 1) = 0xb;		
+			*vga_buffer_pointer.offset(i as isize * 2 + 1) = 0xf;		
 		}
 	}
 
