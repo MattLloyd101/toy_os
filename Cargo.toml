@@ -8,3 +8,6 @@ edition = "2018"
 
 [dependencies]
 bootloader = "0.8.2"
+
+[package.metadata.bootimage]
+run-command = ["qemu-system-x86_64.exe", "-drive", "format=raw,file={}"]
